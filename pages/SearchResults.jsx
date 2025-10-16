@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 import { products } from '../data/product'
-import { p } from 'motion/react-client'
+
 
 const SearchResults = () => {
     const location = useLocation()

@@ -35,3 +35,62 @@
 .animate-expand {
   animation: expand 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* src/index.css or src/App.css */
+
+/* ... all your other global styles ... */
+
+/* ------------------------------------- */
+/* --- LOADING SPINNER STYLES START --- */
+/* ------------------------------------- */
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.bouncing-balls {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+/* Delay for each ball to create a wave effect */
+.bouncing-balls .ball:nth-child(1) { animation-delay: 0s; }
+.bouncing-balls .ball:nth-child(2) { animation-delay: 0.1s; }
+.bouncing-balls .ball:nth-child(3) { animation-delay: 0.2s; }
+.bouncing-balls .ball:nth-child(4) { animation-delay: 0.3s; }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.nike-logo {
+  width: 80px;
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+/* ------------------------------------- */
+/* --- LOADING SPINNER STYLES END --- */
+/* ------------------------------------- */

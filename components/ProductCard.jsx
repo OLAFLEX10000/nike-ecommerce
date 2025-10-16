@@ -55,7 +55,7 @@ const ProductCard = () => {
               <SwiperSlide
                 key={product.id}
                 // Ensure SwiperSlide has a width and a fixed height to contain the card
-                className="!w-[240px] md:!w-[280px] !h-[420px] pb-10" // Increased height for better proportions
+                className="!w-[240px] md:!w-[280px] !h-[420px] pb-10" 
                 onClick={() => navigate(`/product/${product.id}`)}
               >
                 <motion.div
@@ -66,10 +66,11 @@ const ProductCard = () => {
                   viewport={{ once: true }}
                   whileHover={{
                     scale: 1.03, // Less aggressive scale
-                    boxShadow: '0 10px 40px rgba(0,0,0,0.15)', // Darker, cleaner shadow
+                    boxShadow: '0 10px 40px rgba(0,0,0,0.15)', 
                   }}
                   // KEY FIX: Fixed height and Flex properties
-                  className="flex flex-col h-full bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden p-4 relative cursor-pointer transition-shadow duration-300"
+                  className="flex flex-col h-full bg-white rounded-xl shadow-lg hover:shadow-2xl 
+                  overflow-hidden p-4 relative cursor-pointer transition-shadow duration-300"
                 >
                   {/* Animated glow border (Kept for unique flair) */}
                   <motion.div

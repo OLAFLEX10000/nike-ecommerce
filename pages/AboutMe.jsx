@@ -56,7 +56,7 @@ const AboutMe = () => {
                         Olamide <span className="text-red-600">Michael</span>
                     </h1>
                     <p className="text-3xl font-light text-gray-300">
-                        Front-End Developer & UI/UX Specialist
+                        Front-End Developer / Engineer
                     </p>
                 </motion.div>
 

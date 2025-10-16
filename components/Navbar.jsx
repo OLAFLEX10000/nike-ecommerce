@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Search, ShoppingCart, Menu, X, Heart } from "lucide-react"; // 👈 added Heart icon
-
+import AboutImg from '../src/assets/About-me-img.jpg'
 import { useCartStore } from "../src/store/cartStore";
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Products", path: "/products" },
+    { name: "Products", path: "/product/:id" },
     { name: "Cart", path: "/cart" },
     { name: "Contact", path: "/contact" },
   ];
@@ -134,7 +134,7 @@ const Navbar = () => {
               >
                 <div className="w-10 h-10 rounded-full border-2 border-gray-200 overflow-hidden transition-all duration-300 hover:border-red-500 hover:scale-105">
                   <img
-                    src="https://randomuser.me/api/portraits/men/75.jpg"
+                    src={AboutImg}
                     alt="Account"
                     className="w-full h-full object-cover"
                   />
@@ -149,21 +149,21 @@ const Navbar = () => {
                   <div className="flex flex-col items-center">
                     <div className="w-16 h-16 rounded-full overflow-hidden mb-3 border-2 border-red-500">
                       <img
-                        src="https://randomuser.me/api/portraits/men/32.jpg"
+                        src={AboutImg}
                         alt="User"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <p className="font-bold text-gray-900 text-lg">
-                      Michael Awolesi
+                      Awolesi Olamide
                     </p>
                     <p className="text-sm text-gray-500 mb-4">
-                      michael@example.com
+                      olamideawolesi21@gmail.com
                     </p>
 
                     <div className="w-full space-y-2">
                       <Link
-                        to="/profile"
+                        to="/about-me"
                         className="block w-full text-center py-2 rounded-lg border border-gray-200 hover:bg-gray-50 transition-all duration-300 text-sm font-medium"
                       >
                         My Profile

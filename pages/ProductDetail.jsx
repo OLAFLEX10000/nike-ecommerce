@@ -9,7 +9,10 @@ const ProductDetail = () => {
   const addToCart = useCartStore((state) => state.addToCart);
 
   if (!product) {
-    return <div className="text-center text-gray-600 py-10">Product not found</div>;
+    return <div
+    
+    className="text-center text-3xl md:text-5xl font-bold 
+    py-10 min-h-screen">Please Select Product!</div>;
   }
 
   return (

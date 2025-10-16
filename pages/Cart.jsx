@@ -59,12 +59,18 @@ const Cart = () => {
               </li>
             ))}
           </ul>
-          <button
+          <div className="flex gap-3">
+            <button
             onClick={clearCart}
             className="mt-6 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
           >
             Clear Cart
           </button>
+
+          <button className="mt-6 bg-black text-white px-4 py-2 rounded hover:bg-neutral-900">
+            Place Order
+          </button>
+          </div>
         </>
       )}
       <p className="text-lg font-semibold">

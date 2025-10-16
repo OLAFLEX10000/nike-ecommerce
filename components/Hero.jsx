@@ -58,14 +58,14 @@ const Hero = () => {
           className="flex gap-4 mt-8 justify-center md:justify-start"
         >
           <Link
-            to="/products"
+           
             className="bg-red-600 text-white px-8 py-3 rounded-md font-bold uppercase tracking-wider shadow-lg hover:bg-black transition-all duration-300"
           >
             Shop Now
           </Link>
 
           <Link
-            to="/about"
+           
             className="bg-black text-white px-8 py-3 rounded-md font-bold uppercase tracking-wider hover:bg-neutral-700 transition-all duration-300"
           >
             Explore
